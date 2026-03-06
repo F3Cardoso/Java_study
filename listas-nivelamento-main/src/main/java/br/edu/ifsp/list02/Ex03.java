@@ -35,11 +35,11 @@ public class Ex03 {
         StringBuilder resultado = new StringBuilder();
         List<Integer> atual = new ArrayList<>(10);
         resultado.append("\"");
-        if (firstFive == null || firstFive.length != 5) return new StringBuilder("\"Erro\"");
+        if (firstFive == null || firstFive.length != 5) return new StringBuilder("Erro");
 
         for (i = 0; i < 5; i++) {
             for (j = i + 1; j < 5; j++) {
-                if (firstFive[i] == firstFive[j]) return new StringBuilder("\"Erro\"");
+                if (firstFive[i] == firstFive[j]) return new StringBuilder("Erro");
             }
         }
 
