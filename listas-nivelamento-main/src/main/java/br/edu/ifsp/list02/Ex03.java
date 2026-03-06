@@ -26,19 +26,20 @@ public class Ex03 {
             sb.append(n).append(" ");
         }
 
-        return sb.toString();
+        return sb.toString().trim(); // remove espaço em branco no final da String
     }
 
-    StringBuilder compute(int[] firstFive, int[] otherInts) {
+    //TODO você não pode alterar a assinatura do método, senão os testes não passam. Era String, você mudou para StringBuilder (que ainda nem vimos ...)
+    String compute(int[] firstFive, int[] otherInts) {
         String output = null;
         int n = 5, i, j;
         StringBuilder resultado = new StringBuilder();
         List<Integer> atual = new ArrayList<>(10);
-        if (firstFive == null || firstFive.length != 5) return new StringBuilder("Erro");
+        if (firstFive == null || firstFive.length != 5) return "Erro";
 
         for (i = 0; i < 5; i++) {
             for (j = i + 1; j < 5; j++) {
-                if (firstFive[i] == firstFive[j]) return new StringBuilder("Erro");
+                if (firstFive[i] == firstFive[j]) return "Erro";
             }
         }
 
@@ -61,6 +62,6 @@ public class Ex03 {
 
 
         }
-        return resultado;
+        return resultado.toString().trim(); // Remove espaço em branco no começo e no final da String (seu algoritmo está adicionando um \n no final"
     }}
 
