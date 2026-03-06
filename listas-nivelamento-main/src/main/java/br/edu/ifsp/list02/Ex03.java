@@ -34,7 +34,6 @@ public class Ex03 {
         int n = 5, i, j;
         StringBuilder resultado = new StringBuilder();
         List<Integer> atual = new ArrayList<>(10);
-        resultado.append("\"");
         if (firstFive == null || firstFive.length != 5) return new StringBuilder("Erro");
 
         for (i = 0; i < 5; i++) {
