@@ -1,6 +1,8 @@
 package encapsulation;
 import encapsulation.Player;
 import encapsulation.Team;
+
+//TODO mantenha a identação nas classes
 public class Mister {
     void main(){
 
@@ -14,6 +16,7 @@ public class Mister {
     club.addPlayer(fezin);
     club.getFieldedPlayers(fezin);
     club.setCaptain(fezin);
+    //TODO não coloque o for todo na mesma linha.
     for(i=0;i<club.fieldedPlayers.length;i++){System.out.println(club.fieldedPlayers[i].getName());}
     club.addPlayer(coppola);
     club.getOutfieldedPlayers(coppola);
